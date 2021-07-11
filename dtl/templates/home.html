@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{%for i,j in all.items%}
+    {%if i == 'vinod'%}
+    <h1>{{j|upper}}</h1>
+    {%endif%}
+{% endfor %}
+<h1>{{date|date:'SHORT_DATE_FORMAT'}}</h1>
+</body>
+</html>
